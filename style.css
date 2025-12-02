@@ -1,0 +1,116 @@
+:root{
+    --c1-Primary: #6A3E12;
+    --c2-Secondary: #1F4D70;
+    --c3-Accent1: #D2A55A;
+    --c4-Accent2: #F3E8C6;
+    --f1-Heading: "Playfair Display";
+    --f2-Paragraph: "Lato";
+}
+* {box-sizing: border-box}
+html {
+  min-height: 100%;
+}
+.content{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--c4-Accent2);
+    font-family: var(--f2-Paragraph), "Arial","sans-serif";
+    color: var(--c1-Primary);
+    font-size: 17px;
+    font-weight: 400;
+}
+/*-------------*/
+header{
+    width: auto;
+    height: auto;
+}
+
+#title_logo_box{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid var(--c2-Secondary);
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#title{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+#title p{
+    width: auto;
+    height: auto;
+    font-family: var(--f1-Heading);
+    text-transform: uppercase;
+    font-size: 8vw;
+    line-height: .8;
+    margin: 0;
+}
+
+#navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px solid var(--c2-Secondary);
+    border-bottom: 3px solid var(--c2-Secondary);
+}
+#navbar a{
+    width: auto;
+    height: 100%;
+    background-color: var(--c1-Primary);
+    border-radius: 50%;
+    border: 3px solid var(--c1-Primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*-------------*/
+main{
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+main div{
+    padding-bottom: 40px;
+}
+main div h1{
+    font-size: 3vw;
+}
+main div p{
+    font-size: 1.5vw;
+}
+/*-------------*/
+footer{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    border-top: 3px solid var(--c2-Secondary);
+    font-size: 1vw;
+}

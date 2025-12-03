@@ -114,3 +114,54 @@ footer{
     border-top: 3px solid var(--c2-Secondary);
     font-size: 1vw;
 }
+
+/* ----------- */
+
+#contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;  
+    gap: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    align-items: start;
+}
+
+#contact-info {
+    background-color: var(--c4-Accent2);
+    padding: 20px;
+    border: 2px solid var(--c2-Secondary);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid var(--c2-Secondary);
+}
+
+#form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--c1-Primary);
+}
+
+#form button {
+    background-color: var(--c2-Secondary);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#form button:hover {
+    background-color: var(--c1-Primary);
+}
